@@ -161,7 +161,7 @@
       - ATC:
          - Tower/Approach:
              icon: https://cdn.brandfetch.io/idz5JfMMsI/w/400/h/400/theme/dark/icon.png?c=1bfwsmEH20zzEfSNTed
-             href: https://www.liveatc.net
+             href: https://www.liveatc.net/hlisten.php?mount=kboi&icao=kboi
          - Delivery/Ground:
              icon: https://cdn.brandfetch.io/idz5JfMMsI/w/400/h/400/theme/dark/icon.png?c=1bfwsmEH20zzEfSNTed
-             href: https://www.liveatc.net
+             href: https://www.liveatc.net/hlisten.php?mount=kboi_gnd&icao=kboi
