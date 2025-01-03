@@ -1,1 +1,167 @@
+- Services1:
+    - TrueNAS:
+        id: truenas-scale
+        icon: truenas-scale.png
+        href: http://your.server.ip
+        siteMonitor: http://your.server.ip
+        statusStyle: dot
+        widget:
+          type: truenas
+          fields: ["uptime", "alerts"]
+          url: http://your.server.ip
+          key: apikey # not required if using username / password
+          enablePools: true # optional, defaults to false
+          nasType: scale # defaults to scale, must be set to 'core' if using enablePools with TrueNAS Core
+    - Immich:
+        icon: immich.png
+        href: http://your.server.ip:port
+        siteMonitor: http://your.server.ip:port
+        statusStyle: dot
+        widget:
+          type: immich
+          fields: ["photos", "videos", "storage"]
+          url: http://your.server.ip:port
+          key: apikey
+          version: 2
+    - TubeArchivist:
+        icon: tube-archivist.png
+        href: http://your.server.ip:port
+        siteMonitor: http://your.server.ip:port
+        statusStyle: dot
+        widget:
+          type: tubearchivist
+          fields: ["downloads", "videos", "channels"]
+          url: http://your.server.ip:port
+          key: apikey
 
+- Services2:
+    - Nextcloud:
+        icon: nextcloud.png
+        href: http://your.server.ip:port
+        siteMonitor: http://your.server.ip:port
+        statusStyle: dot
+        widget:
+          type: nextcloud
+          fields: ["numfiles"]
+          url: http://your.server.ip:port
+          username: 
+          password: 
+    - Portainer:
+        icon: portainer-alt.png
+        href: https://your.server.ip:port
+        siteMonitor: https://your.server.ip:port
+        statusStyle: dot
+        widget:
+          type: portainer
+          url: https://your.server.ip:port
+          env: 3
+          key: apikey
+    - Tailscale:
+        icon: tailscale-light.png
+        href: https://login.tailscale.com/admin/machines/your.server.ip
+        widget:
+          type: tailscale
+          fields: ["address", "last_seen"]
+          deviceid: deviceid
+          key: apikey
+    - NetAlertX:
+        icon: netalertx.png
+        id: netalert
+        href: http://your.server.ip:port
+        siteMonitor: http://your.server.ip:port
+        statusStyle: dot
+        widget:
+          type: netalertx
+          fields: ["connected", "new_devices", "down_alerts"]
+          url: http://your.server.ip:port
+- Graphs1:
+    - CPU:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: cpu
+          version: 4
+    - CPU Temp:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: sensor:Package id 0
+          version: 4
+    - RAM:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: memory
+          version: 4
+    - Network:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: network:eth0
+          version: 4
+- Graphs2:
+    - Boot Drive:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: disk:sdb
+          version: 4
+    - Mirrored Drive 1:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: disk:sdc
+          version: 4
+    - Mirrored Drive 2:
+        widget:
+          type: glances
+          url: http://your.server.ip:port
+          metric: disk:sda
+          version: 4
+- Blocks:
+  - Tasksblock:
+      - Tasks:
+          widget:
+            type: iframe
+            name: Tasks
+            src: https://app.todoist.com
+            classes: h-80 # optional, use tailwind height classes, see https://tailwindcss.com/docs/height
+            referrerPolicy: same-origin # optional, no default
+            allowPolicy: fullscreen # optional, no default
+            allowFullscreen: false # optional, default: true
+            loadingStrategy: eager # optional, default: eager
+            allowScrolling: no # optional, default: yes
+  - MailCalendar:
+      - Calendar:
+          widget:
+            type: calendar
+            firstDayInWeek: sunday # optional - defaults to monday
+            view: monthly # optional - possible values monthly, agenda
+            maxEvents: 50 # optional - defaults to 10
+            showTime: true # optional - show time for event happening today - defaults to false
+            timezone: America/Boise # optional and only when timezone is not detected properly (slightly slower performance) - force timezone for ical events (if it's the same - no cha>      - Links:
+          - Gmail:
+              icon: gmail.png
+              href: https://mail.google.com/mail/u/0/
+          - Google Calendar:
+              icon: google-calendar.png
+              href: https://calendar.google.com/calendar/u/0/r
+  - Planes:
+      - ADS-B Exchange:
+          widget:
+            type: iframe
+            name: ADS-B Exchange
+            src: https://globe.adsbexchange.com/
+            classes: h-64 # optional, use tailwind height classes, see https://tailwindcss.com/docs/height
+            referrerPolicy: same-origin # optional, no default
+            allowPolicy: fullscreen # optional, no default
+            allowFullscreen: false # optional, default: true
+            loadingStrategy: eager # optional, default: eager
+            allowScrolling: no # optional, default: yes
+      - ATC:
+         - Tower/Approach:
+             icon: https://cdn.brandfetch.io/idz5JfMMsI/w/400/h/400/theme/dark/icon.png?c=1bfwsmEH20zzEfSNTed
+             href: https://www.liveatc.net
+         - Delivery/Ground:
+             icon: https://cdn.brandfetch.io/idz5JfMMsI/w/400/h/400/theme/dark/icon.png?c=1bfwsmEH20zzEfSNTed
+             href: https://www.liveatc.net

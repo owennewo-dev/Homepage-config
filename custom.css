@@ -1,1 +1,8 @@
-
+.down-bg {
+  background-color: #ff0000 !important; /* this color works for my homepage theming, chances are you'll want to change it */
+  /* I have this css transition code uncommented in mine, just personal preference */
+  /* -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear; */
+}

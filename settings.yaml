@@ -1,1 +1,69 @@
+color: emerald
+theme: dark
 
+background:
+  image: https://github.com/owennewo-dev/Homepage-config/blob/main/hexagons.jpg?raw=true
+cardBlur: "" # sm, "", md, etc... see https://tailwindcss.com/docs/backdrop-blur
+
+hideVersion: false
+
+useEqualHeights: true
+
+headerStyle: boxedWidgets
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  Services1:
+    style: row
+    columns: 3
+    header: false
+  Services2:
+    style: row
+    columns: 4
+    header: false
+  Blocks:
+    style: row
+    columns: 3
+    header: false
+    Tasksblock:
+      style: column
+      columns: 1
+      header: false
+    MailCalendar:
+      style: column
+      columns: 1
+      header: false
+      Links:
+        style: row
+        columns: 2
+        header: false
+    Planes:
+      style: column
+      columns: 1
+      header: false
+      ATC:
+        style: row
+        columns: 2
+        header: false
+  Graphs1:
+    style: row
+    columns: 4
+    header: false
+  Graphs2:
+    style: row
+    columns: 3
+    header: false
+  Homepage:
+    style: row
+    columns: 3
+    disableCollapse: true
+    header: false
+  Eyecons:
+    iconsOnly: true
+    style: column
+    columns: 1
+    disableCollapse: true
+    header: false
