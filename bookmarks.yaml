@@ -1,1 +1,37 @@
-
+- Bookmarks:
+    - Bank:
+      - icon: https://raw.githubusercontent.com/owennewo-dev/Homepage-config/658701de54dc581a0ad913444f71ce0a0d82a655/Icons/iccu.svg
+        href: https://iccu.com
+    - Venmo:
+      - icon: si-venmo
+        href: https://account.venmo.com/
+    - YouTube:
+      - icon: si-youtube
+        href: https://www.youtube.com
+    - Twitch:
+      - icon: si-twitch
+        href: https://www.twitch.tv/technotim
+    - Homepage Github:
+      - icon: si-homepage
+        href: https://github.com/gethomepage/homepage
+    - Homepage Docs:
+      - icon: si-googledocs
+        href: https://gethomepage.dev/configs
+    - Simple Icons:
+      - icon: si-simpleicons
+        href: https://simpleicons.org/
+    - Website:
+      - abbr: WEB
+        href: 
+    - Pixieset:
+      - abbr: PIX
+        href: 
+    - Flickr:
+      - icon: si-flickr
+        href: https://www.flickr.com/
+    - Music Collage:
+      - icon: si-applemusic
+        href: https://www.tapmusic.net/
+    - HTML Color Codes:
+      - icon: si-html5
+        href: https://html-color.codes/

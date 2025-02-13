@@ -1,44 +1,54 @@
-color: emerald
+color: gray
 theme: dark
 
 background:
-  image: https://github.com/owennewo-dev/Homepage-config/blob/main/hexagons.jpg?raw=true
+  image: https://i.imgur.com/s4Fqur6.gif
 cardBlur: "" # sm, "", md, etc... see https://tailwindcss.com/docs/backdrop-blur
 
-hideVersion: false
+hideVersion: true
 
 useEqualHeights: true
 
 headerStyle: boxedWidgets
+
+iconStyle: theme
 
 providers:
   openweathermap: openweathermapapikey
   weatherapi: weatherapiapikey
 
 layout:
-  Services1:
-    style: row
-    columns: 3
+  Services:
+    style: column
+    columns: 1
     header: false
-  Services2:
-    style: row
-    columns: 4
-    header: false
-  Blocks:
-    style: row
-    columns: 3
-    header: false
-    Tasksblock:
-      style: column
+    Top:
+      style: row
       columns: 1
       header: false
+    Lower:
+      style: row
+      columns: 2
+      header: false
+    Lowest:
+      style: row
+      columns: 3
+      header: false
+    Glances:
+      style: row
+      columns: 3
+      header: false
+  Blocks:
+    style: column
+    columns: 1
+    header: false
     MailCalendar:
-      style: column
+      style: row
       columns: 1
       header: false
       Links:
         style: row
-        columns: 2
+        columns: 3
         header: false
     Planes:
       style: column
@@ -48,22 +58,9 @@ layout:
         style: row
         columns: 2
         header: false
-  Graphs1:
-    style: row
-    columns: 4
-    header: false
-  Graphs2:
-    style: row
-    columns: 3
-    header: false
-  Homepage:
-    style: row
-    columns: 3
-    disableCollapse: true
-    header: false
-  Eyecons:
+  Bookmarks:
     iconsOnly: true
-    style: column
-    columns: 1
+    style: row
+    columns: 10
     disableCollapse: true
     header: false

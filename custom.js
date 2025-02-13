@@ -1,3 +1,5 @@
+/* I don't use any of this custom code anymore, I just keep it here for your reference */
+
 function createObserver() {
   // calling this on init to get style updated first time
   updateDownSitePanelStatus();
